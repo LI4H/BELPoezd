@@ -1,0 +1,46 @@
+<!-- res/drawable/neon_button.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Черный фон кнопки -->
+    <item android:drawable="@drawable/button_background"/>
+
+    <!-- Эффект свечения или тени -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" />
+            <solid android:color="#000000"/> <!-- Цвет свечения или тени (здесь зеленый) -->
+        </shape>
+    </item>
+
+    <!-- Обводка кнопки -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" />
+            <stroke
+                android:width="2dp"
+                android:color="#FF00FF" /> <!-- Цвет обводки (розовый) -->
+        </shape>
+    </item>
+
+    <!-- Белая полоска внутри обводки -->
+    <item android:top="2dp" android:left="2dp" android:right="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" />
+            <solid android:color="#FFFFFF"/> <!-- Цвет белой полоски -->
+        </shape>
+    </item>
+
+    <!-- Розовое "кольцо" внутри белой полоски -->
+    <item android:top="3dp" android:left="3dp" android:right="3dp" android:bottom="3dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <solid android:color="#FF00FF"/> <!-- Цвет розового "кольца" -->
+        </shape>
+    </item>
+    <item android:top="5dp" android:left="5dp" android:right="5dp" android:bottom="5dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <solid android:color="#000000"/> <!-- Цвет розового "кольца" -->
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,10 @@
+<resources>
+    <style name="SpinnerTextStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:textColor">#2196F3</item>
+    </style>
+
+    <style name="SpinnerDropDownStyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">#000000</item>
+        <item name="android:textColor">#2196F3</item>
+    </style>
+</resources>

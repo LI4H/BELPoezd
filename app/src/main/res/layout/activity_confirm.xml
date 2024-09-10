@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmActivity">
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:enabled="false"
+        android:onClick="onBackButtonClick"
+        android:text="Назад"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="683dp" />
+
+    <TextView
+        android:id="@+id/trainNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Номер поезда: "
+        app:layout_constraintEnd_toEndOf="@+id/directionTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/directionTextView"
+        app:layout_constraintTop_toBottomOf="@+id/directionTextView" />
+
+    <TextView
+        android:id="@+id/arrivalTimeTextView"
+        android:layout_width="303dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Время прибытия: "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/directionTextView"
+        android:layout_width="243dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:text="Направление: "
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/arrivalTimeTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/arrivalTimeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/arrivalTimeTextView" />
+
+    <TextView
+        android:id="@+id/platformTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Платформа: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toEndOf="@+id/trainNumberTextView"
+        app:layout_constraintTop_toBottomOf="@+id/directionTextView" />
+
+    <TextView
+        android:id="@+id/trackTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Путь: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toEndOf="@+id/platformTextView"
+        app:layout_constraintTop_toBottomOf="@+id/directionTextView" />
+
+    <TextView
+        android:id="@+id/passportNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textStyle="italic"
+        android:text="Номер паспорта: "
+        app:layout_constraintStart_toEndOf="@+id/passportSeriesTextView"
+        app:layout_constraintTop_toBottomOf="@+id/platformTextView" />
+
+    <TextView
+        android:id="@+id/passportSeriesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textStyle="italic"
+        android:text="Серия паспорта: "
+        app:layout_constraintStart_toStartOf="@+id/trainNumberTextView"
+        app:layout_constraintTop_toBottomOf="@+id/trainNumberTextView" />
+
+    <TextView
+        android:id="@+id/lastNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textStyle="italic"
+        android:text="Фамилия: "
+        app:layout_constraintEnd_toEndOf="@+id/passportSeriesTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passportSeriesTextView"
+        app:layout_constraintTop_toBottomOf="@id/passportSeriesTextView" />
+
+    <TextView
+        android:id="@+id/firstNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textStyle="italic"
+        android:layout_marginTop="8dp"
+        android:text="Имя: "
+        app:layout_constraintStart_toEndOf="@+id/lastNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/passportNumberTextView" />
+
+    <TextView
+        android:id="@+id/patronymicTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="italic"
+        android:text="Отчество: "
+        app:layout_constraintStart_toEndOf="@+id/firstNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/passportNumberTextView" />
+
+    <TextView
+        android:id="@+id/selectedDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Выбранная дата: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lastNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameTextView" />
+
+    <ImageButton
+        android:id="@+id/selectDateButton"
+        android:layout_width="118dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/date"
+        android:text="Выбрать дату"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/selectedDateTextView"
+        app:layout_constraintTop_toBottomOf="@id/selectedDateTextView" />
+
+    <ImageButton
+        android:id="@+id/payButton"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="568dp"
+        android:background="@drawable/fingerprint3"
+        android:text="Оплатить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="298dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/confirm_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

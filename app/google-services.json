@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "836512294854",
+    "firebase_url": "https://belpoezd-default-rtdb.firebaseio.com",
+    "project_id": "belpoezd",
+    "storage_bucket": "belpoezd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836512294854:android:766e8cfa1f3da7d1bb34c7",
+        "android_client_info": {
+          "package_name": "com.example.belpoezd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "836512294854-fmai8c6nr5nqagbu6age504cdng07ksj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxk4IxDsgxV9BcfESG-OOk4DoJcxiOmSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "836512294854-fmai8c6nr5nqagbu6age504cdng07ksj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

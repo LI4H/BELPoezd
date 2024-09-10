@@ -1,0 +1,11 @@
+<resources>
+    <string-array name="directions_array">
+        <item>Брест</item>
+        <item>Витебск</item>
+        <item>Гомель</item>
+        <item>Гродно</item>
+        <item>Минск</item>
+        <item>Могилев</item>
+        <item>Полоцк</item>
+    </string-array>
+</resources>
